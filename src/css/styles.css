@@ -1,0 +1,124 @@
+/* Base Styles */
+:root {
+    --dark-space: #1c1c2e;
+    --cosmic-blue: #0074D9;
+    --comet-red: #FF4136;
+    --starlight-yellow: #FFDC00;
+    --planet-green: #2ECC40;
+    --neon-purple: #B10DC9;
+  }
+  
+  body {
+    background-color: var(--dark-space);
+    color: var(--starlight-yellow);
+    font-family: 'Comic Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  .header {
+    background-color: var(--cosmic-blue);
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+  }
+  
+  /* Search Section */
+  #search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .search-box {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid var(--planet-green);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .button {
+    background-color: var(--comet-red);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  /* Recommendations Section */
+  .section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  #comicsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Comic Card Styles */
+  .comic-card {
+    background-color: #fff;
+    color: var(--dark-space);
+    padding: 15px;
+    border: 2px solid var(--cosmic-blue);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .comic-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .comic-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .comic-card p {
+    font-size: 0.9em;
+    color: var(--dark-space);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--cosmic-blue);
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1em;
+  }
+  
